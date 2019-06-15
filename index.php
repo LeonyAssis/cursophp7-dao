@@ -2,10 +2,24 @@
 
 require_once("config.php");
 
-$root = new Usuario();
+//lista somente 1
+//$root = new Usuario();
+//$root->loadById(4);
+//echo $root."<br>";
 
-$root->loadById(4);
+//lista todos os usuarios da tabela
+//$lista = Usuario::listaUsuario();
+//echo json_encode($lista);
 
-echo $root;
+//Carrega lista buscando pelo login
+//$search = Usuario::search("jo");
+//echo json_encode($search);
+
+//busca pelo login e senha
+$usuario = new Usuario();
+$usuario->login("astolfo","0987651");
+
+echo $usuario;
+
 
 ?>
