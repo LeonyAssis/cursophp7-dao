@@ -34,11 +34,16 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+//atualiza registro no banco
 $usuario = new Usuario();
-
 $usuario->loadById(1);
 $usuario->update("lambisogia","1!@#$%");
-
-
 echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->delete();
+ 
 ?>
